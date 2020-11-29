@@ -1,0 +1,20 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1078.5" scrolly="552" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1094.257568359375" scrolly="595.6363525390625" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="5QO{#rx}ApOY5^ZlCj,S" x="-1150" y="-330">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <statement name="DO">
+        <block type="loadScene" id="qF{GLMHT:p/gdj+_E5-h">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enablealias="false"></mutation>
+          <value name="URL">
+            <shadow type="text" id="l#%GUi?r^Xt}*/e6lLc6">
+              <field name="TEXT">omarica60.gltf</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1378.1999999999998" viewport-y="28" viewport-w="930.8" viewport-h="590" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

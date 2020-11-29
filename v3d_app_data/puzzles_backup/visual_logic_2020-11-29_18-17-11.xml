@@ -1,0 +1,213 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="988" scrolly="536" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1092.0936537516409" scrolly="530.6765066212547" scale="0.7462153966366274">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="zu8b)~(Bpow{#%^}LFwm" type="">stevec</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="S_[t7^1gQ2C[rXS)T7rN" x="-1130" y="-468">
+      <field name="VAR" id="zu8b)~(Bpow{#%^}LFwm">stevec</field>
+      <value name="VALUE">
+        <block type="math_number" id="%U3i%RCs|6BG6(gs#6~/">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="aqPQm_Vnc+kfPmxzS!(p" x="-1150" y="-370">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="yL+#R=PqV?G6Dg!1dOFM">
+          <field name="FIELDNAME">Plane.1</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="appendScene" id="3S!6Sj./bC*!%HOlSPrc">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" loadcameras="false" loadlights="false" enablealias="true"></mutation>
+          <value name="URL">
+            <shadow type="text" id="~G~UC6^j+n9|2Ax^{S|)">
+              <field name="TEXT">omarica60.gltf</field>
+            </shadow>
+          </value>
+          <value name="ALIAS">
+            <shadow type="text" id="OWqN]8U2w7LBxD+*wZd?">
+              <field name="TEXT">MyScene</field>
+            </shadow>
+            <block type="text_join" id="!;giq[BUBEkz]Vzr4@;`">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="text" id="zyxq{qr%,y+$bWz0Q/Ct">
+                  <field name="TEXT">sceneName</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="variables_get" id="jcfVBwJOXoR$|P*~#=U;">
+                  <field name="VAR" id="zu8b)~(Bpow{#%^}LFwm">stevec</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="setObjTransform" id="Rfx#NJ2n,riL2!jibS9{">
+              <field name="MODE">position</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <block type="text_join" id=")gr|e5B]hHoQ)/p{dM3M">
+                  <mutation items="2"/>
+                  <value name="ADD0">
+                    <block type="text" id=";cFm3O5X#].v;P%{at|,">
+                      <field name="TEXT">sceneName</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="variables_get" id="ma3,Ta#U!KrX7vm*z~?~">
+                      <field name="VAR" id="zu8b)~(Bpow{#%^}LFwm">stevec</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="X">
+                <block type="variables_get" id="{/t}2Tlkr,{u*KG7oMO@">
+                  <field name="VAR" id="zu8b)~(Bpow{#%^}LFwm">stevec</field>
+                </block>
+              </value>
+              <value name="Y">
+                <block type="math_number" id="19W9GexZ[NT`)3x0=;8r">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+              <value name="Z">
+                <block type="math_number" id="}[$F5caDKk;41Su::a]B">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+              <next>
+                <block type="math_change" id="mn}BK6(Hn#q_vn@xr7EC">
+                  <field name="VAR" id="zu8b)~(Bpow{#%^}LFwm">stevec</field>
+                  <value name="DELTA">
+                    <shadow type="math_number" id="GW%;_-9OBrEGOuHzvjnj">
+                      <field name="NUM">0.7</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="hide" id=".U/1Jg,3@#fWP5z?`/8a">
+                      <value name="VALUE">
+                        <block type="objectList" id="W;tA!09CL`~E)`X(hW~F">
+                          <field name="FIELDNAME">Plane.1</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="execScript" id="eIk%Qk7)8n.hHl;RF]#+">
+                          <value name="TEXT">
+                            <shadow type="textMultiline" id="`6jH4fCt+[^:Sz*WJ.]k">
+                              <field name="HIGHLIGHT_MODE">javascript</field>
+                              <field name="TEXT">openNav()</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="show" id="SVkl4GqoitHzFQ7%knY|">
+                              <value name="VALUE">
+                                <block type="objectList" id="L5%xi8U6Q}wL?;Mm;!zr">
+                                  <field name="FIELDNAME">Plane.2</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="show" id="f6:x#_zDP#{4_/cG,~l^">
+                                  <value name="VALUE">
+                                    <block type="objectList" id="9~7evznua3s{:SI/QUy|">
+                                      <field name="FIELDNAME">Plane.3</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="5:]YBw-+%1iiUvjAgmJe" x="-1150" y="70">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+      <value name="VALUE">
+        <block type="objectList" id="1W#MQGo`Rz}n(YL`WAJE">
+          <field name="FIELDNAME">Plane.2</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="execScript" id="qv!~pGhm[[o1~fa]KAwk">
+          <value name="TEXT">
+            <shadow type="textMultiline" id="F@!Zvy}vfGCtC3o+`SUQ">
+              <field name="HIGHLIGHT_MODE">javascript</field>
+              <field name="TEXT">closeNav()</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="AT7#^}7[rIDnUv!Mkd3N" x="-1150" y="470">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="{?.U*_6iL%*+$]$@im)+">
+          <field name="TEXT">potrdi_button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setMorphFactor" id="_0%0`|a9KPd#-k`+$5fX">
+          <field name="TARGET_NAME">Key 1</field>
+          <value name="OBJ_NAME">
+            <shadow type="objectList" id="9i*RT%cy3hmNkZE,$,7Z">
+              <field name="FIELDNAME">FL-P-004 Omarica 60 - sestav</field>
+            </shadow>
+          </value>
+          <value name="FACTOR">
+            <shadow type="math_number" id="2{Mfsy@Qn0Z=5m~[3}.F">
+              <field name="NUM">0.5</field>
+            </shadow>
+            <block type="math_arithmetic" id="GUW^?a*^~#3?Bw)wA#!3">
+              <field name="OP">DIVIDE</field>
+              <value name="A">
+                <shadow type="math_number" id="zL*6Z6ted?V`/6eBuz!L">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="math_arithmetic" id="TxB+a@hH=~=PMNSt/NFH">
+                  <field name="OP">MINUS</field>
+                  <value name="A">
+                    <shadow type="math_number" id="y+ri*KA?)?!oWH~ymcU4">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="getHTMLElemAttribute" id="9udz3t%p!?0RTml7x%R~">
+                      <field name="ATTRIBUTE">value</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <block type="text" id="htA(67053bAFm$-00vZ$">
+                          <field name="TEXT">sirina-number</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number" id="zWr8R*p`n7|e$yv)OzP_">
+                      <field name="NUM">60</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="B">
+                <shadow type="math_number" id="$0GtYcw2Euf;@Hv3e[Lt">
+                  <field name="NUM">100</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1378.1999999999998" viewport-y="28" viewport-w="930.8" viewport-h="590" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
